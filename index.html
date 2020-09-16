@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Mi Portafolio</title>
+    <link rel="icon" type="image/png" href="images/sol.jpeg">
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+    <header>
+      <img class="header-img" src="images/sol.jpeg" alt="Foto Solange"> </img>
+      <h1 class="header">Solange Marcillo</h1>
+      <h2 class="subtitle">Curso 4<sup>to</sup> "B"</h2>
+
+        <nav>
+          <ul class="navigation">
+            <li class="nav-item"><a href="#">Acerca de</a> </li>
+            <li class="nav-item"> <a href="#">Mis Proyectos</a> </li>
+            <li class="nav-item"> <a href="#">Contacto</a> </li>
+          </ul>
+        </nav>
+    </header>
+
+  <main>
+    <section>
+      <h2 class="header">Acerca de</h2>
+      <p class="intro">
+      <br> Hola Mi Nombre Es Solange, Estudiantes de Cuarto Semestre de la Carrera Ingenieria En Tecnologia Informatica.</br> 
+      <br> Me gustan los Animales, Esta Es Una practica de Accesibilidad Asignada por la Materia de Interfaces Humano
+       Computador.</br>
+       <br>Este Semestre Tomado De Forma Virtual, No Ha sido facil.</br>
+       <br>En la Parte de proyecto podran Observar Los Animales que se encuentra a mi lado Todos han sido rescatados.</br>
+
+        <ul class="social-media">
+          <li>
+            <a href="https://twitter.com" target="_blank">
+              <img src="images/twitter.png" alt="Twitter Solange"/>
+              <p class="social-link-text">Twitter</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com" target="_blank">
+              <img src="images/github-logo.png" alt="Github Solange"/>
+              <p class="social-link-text">Github</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com" target="_blank">
+              <img src="images/linkedin.png" alt="Linkedin Solange"/>
+              <p class="social-link-text">Linkedin</p>
+            </a>
+          </li>
+        </ul>
+      </p>
+    </section>
+
+    <section>
+      <h2 class="header">Mis Proyectos</h2>
+      <div class="carousel">
+        <button class="arrow arrow-left" aria-label="Boton para ir hacia atrás"></button>
+        <div class="window">
+          <ul class="project-container">
+
+            <li class="project1-container"><button class="project1 project">
+              <img src="images/project1.jpg" class="project-img" alt="Mi primer proyecto"></button>
+            </li>
+
+            <li class="project2-container"><button class="project2 project">
+              <img src="images/project2.jpg" class="project-img" alt="Mi segundo proyecto"></button>
+            </li>
+
+            <li class="project3-container"><button class="project3 project">
+              <img src="images/project3.jpg" class="project-img" alt="Mi tercer proyecto"></button>
+            </li>
+
+            <li class="project4-container" aria-hidden="true"><button class="project4 project"
+              tabindex="-1"><img src="images/project4.jpg" class="project-img" alt="Mi cuarto
+              proyecto"></button>
+            </li>
+
+            <li class="project5-container" aria-hidden="true"><button class="project5 project"
+              tabindex="-1"><img src="images/project5.jpg" class="project-img" alt="Mi quito
+              proyecto"></button>
+            </li>
+
+          </ul>
+        </div>
+        <button class="arrow arrow-right" aria-label="Boton para ir hacia adelante"></button>
+      </div>
+    </section>
+  </main>
+
+
+    <footer class="contact-section">
+      <h2 class="header">Contacto</h2>
+      <p class="intro">Para manderme un mensaje puedes usar el formulario que sigue</p>
+      <form class="form-container">
+        <label class="form-label">Nombre</label>
+          <input type="text" aria-label="nombre" id="name"/>
+        <span id="name-error" aria-live="assertive"></span> <br/>
+        <label class="form-label">Correo</label>
+          <input type="text" aria-label="correo"/> <br />
+        <label class="message-input">Mensaje <input type="text" /> <br/>  </label>
+      <button class="send-button">Enviar</button>
+      </form>
+    </footer>
+
+    <div class="notification" aria-live="assertive"></div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <h2 class="header" id="modal-header" tabindex="0">Ejemplo de un proyecto mio</h2>
+          <img src="images/project2.png" class="modal-project-image" alt="pantallazo del proyecto"/>
+        <button class="modal-button">Cerrar</button>
+      </div>
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
