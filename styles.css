@@ -39,17 +39,17 @@ img {
 
 :root {
   --blanco: white;
-  --gris-medio: #333333;
-  --gris-oscuro: #1e1e1e;
+  --celeste-medio: #81c5e0;
+  --celeste-oscuro: #2183d3;
   --main-font: "Oswald", sans-serif;
   --secondary-font: "Open Sans", sans-serif;
   --shadow: rgba(0, 0, 0, 0.75);
-  --verde: #7ac943;
+  --verde: #96df56;
 }
 
 body, header, section   {
   align-items: center;
-  background-color: var(--gris-medio);
+  background-color: var(--celeste-medio);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -71,7 +71,7 @@ body, header, section   {
 .header-img {
   /* background: center / contain no-repeat url(./images/maria.jpg); */
   border-radius: 50%;
-  border: 1px solid var(--gris-oscuro);
+  border: 1px solid var(--celeste-oscuro);
   box-shadow: 8px 16px 32px 0px var(--shadow);
   height: 300px;
   margin-top: 80px;
@@ -116,7 +116,7 @@ nav {
 
 /* ---edit--- */
 .nav-item:hover a{
-  color: var(--gris-oscuro);
+  color: var(--celeste-oscuro);
 }
 
 
@@ -126,7 +126,7 @@ nav {
 
 .nav-item a:focus {
   outline: none;
-  color: var(--gris-oscuro);
+  color: var(--celeste-oscuro);
 }
 
 .intro {
@@ -241,7 +241,7 @@ nav {
 
 .contact-section {
   align-items: center;
-  background-color: var(--gris-oscuro);
+  background-color: var(--celeste-oscuro);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -282,7 +282,7 @@ input:focus{
   align-items: center;
   background-color: var(--verde);
   border-radius: 5px;
-  color: var(--gris-oscuro);
+  color: var(--celeste-oscuro);
   font-family: var(--secondary-font);
   display: flex;
   height: 50px;
@@ -295,7 +295,7 @@ input:focus{
 }
 
 .send-button:focus, .modal-button:focus{
-  border: 5px solid var(--gris-oscuro);
+  border: 5px solid var(--celeste-oscuro);
   outline: 3px solid var(--verde)
 }
 
@@ -332,7 +332,7 @@ input:focus{
 
 .modal {
   align-items: center;
-  background-color: var(--gris-oscuro);
+  background-color: var(--celeste-oscuro);
   border-radius: 5px;
   border: 2px solid #000;
   display: flex;
